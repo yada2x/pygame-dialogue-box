@@ -1,6 +1,7 @@
 import pygame
 from typing import Optional, Union
 
+# Add ButtonBox and ChoiceBox
 class Border:
     def __init__(self, gap: int, colour: tuple[int, int, int]) -> None:
         self.gap = gap * 2
@@ -72,11 +73,6 @@ class PortraitBox(Box):
     def render(self, surf: pygame.Surface):
         super().render(surf)
         surf.blit(self.portrait, (self.pos[0], self.pos[1]))
-
-class ButtonBox(Box):
-    def __init__(self, size, pos=(0, 0)) -> None:
-        pass
-
-class ChoiceBox(Box):
-    def __init__(self, size, pos=(0, 0)) -> None:
+class TextBox:
+    def __init__(self, text: str, char_size, ) -> None:
         pass

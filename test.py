@@ -3,7 +3,7 @@ import sys
 from test_utils import *
 
 from box import *
-from dialogueBox import DialogueBox
+from dialogue_box import DialogueBox
 
 SCREEN_SIZE = (640, 480)
 BOX_SIZE = (580, 180)
@@ -13,8 +13,6 @@ pygame.display.set_caption("Pygame Dialogue Box")
 screen = pygame.display.set_mode((SCREEN_SIZE[0], SCREEN_SIZE[1]))
 clock = pygame.time.Clock()
 
-# BoxPos ((SCREEN_WIDTH - box_width) // 2 , SCREEN_HEIGHT - box_height - 25)
-# PortraitPos (testBox.getX(), testBox.getY() + (testBox.getHeight() - testImageSize[1]) // 2)
 
 testBox = Box((BOX_SIZE[0], BOX_SIZE[1]), (0, 0, 0), Border(5, (255, 255, 255)))
 
