@@ -1,8 +1,9 @@
 import pygame
+from constants import *
 from box import *
 
 class DialogueBox:
-    def __init__(self, mainBox: Box, mainPos: tuple[int, int], portraitBox: PortraitBox, portraitPos: tuple[int, int]) -> None:
+    def __init__(self, mainBox: Box, mainPos: Vec2, portraitBox: PortraitBox, portraitPos: Vec2) -> None:
         self.mainBox = mainBox 
         self.mainPos = mainPos # Relative to the game screen
         self.mainBox.setPos(self.mainPos[0], self.mainPos[1])

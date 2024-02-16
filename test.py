@@ -1,6 +1,6 @@
 import pygame
 import sys
-from test_utils import *
+from image_utils import *
 
 from box import *
 from dialogue_box import DialogueBox
@@ -16,17 +16,18 @@ clock = pygame.time.Clock()
 
 testBox = Box((BOX_SIZE[0], BOX_SIZE[1]), (0, 0, 0), Border(5, (255, 255, 255)))
 
-testImage = load_image('sansface.png', (150, 150))
+testImage = load_image('portraits/sansface.png', (150, 150))
 testPortrait = PortraitBox((testImage.get_width(), testImage.get_height()), testImage, (0, 0, 0), None)
 
 dialogue1 = DialogueBox(testBox, ((SCREEN_SIZE[0] - BOX_SIZE[0]) // 2, (SCREEN_SIZE[1] - BOX_SIZE[1] - 25)), 
                         testPortrait, (20, 15))
 
+#comicsansms
 
 while True:
     screen.fill((0, 0, 0))
     dialogue1.render(screen)
-
+    
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
