@@ -3,9 +3,10 @@
 ### Plan
 
 - Customisable dialogue box
-    - Position anywhere
-    - Resizable
-    - Can play animations (character portraits, etc)
+    - ~~Position anywhere~~
+    - ~~Resizable~~
+    - Can play animations 
+        - Character portraits
         - Allow for 'finish' indicators
 
 - Dialogue text
