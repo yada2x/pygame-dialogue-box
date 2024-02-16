@@ -19,7 +19,7 @@ clock = pygame.time.Clock()
 testBox = Box((BOX_SIZE[0], BOX_SIZE[1]), (0, 0, 0), Border(5, (255, 255, 255)))
 
 testImage = load_image('sansface.png', (150, 150))
-testPortrait = Portrait((testImage.get_width(), testImage.get_height()), testImage, (0, 0, 0), None)
+testPortrait = PortraitBox((testImage.get_width(), testImage.get_height()), testImage, (0, 0, 0), None)
 
 dialogue1 = DialogueBox(testBox, ((SCREEN_SIZE[0] - BOX_SIZE[0]) // 2, (SCREEN_SIZE[1] - BOX_SIZE[1] - 25)), 
                         testPortrait, (20, 15))

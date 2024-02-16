@@ -1,4 +1,5 @@
-from box import Box, DialogueButton, DialogueChoices, DialoguePortrait
+from box import *
+from dialogueBox import *
 
 class TreeManager:
     def __init__(self) -> None:
@@ -9,5 +10,5 @@ class Text:
         pass
 
 class DialogueNode:
-    def __init__(self, node_id: str, text: Text, choices, box: Box) -> None:
+    def __init__(self, node_id: str, text: Text, choices, dialogue: DialogueBox) -> None:
         pass
